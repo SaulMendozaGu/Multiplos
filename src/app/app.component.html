@@ -1,0 +1,29 @@
+<mat-card class="contenido">
+  <mat-card-title>Multiplos</mat-card-title>
+  <mat-card-subtitle>de 3,5,7</mat-card-subtitle>
+  <mat-card-content>
+    <form [formGroup]="valorNumero">
+      <mat-form-field class="example-full-width" 
+                      appearance="outline">
+        <mat-label>Ingresa un número:</mat-label>
+        <input matInput type="number"
+               formControlName="numero"
+               name="numero"
+         >
+      </mat-form-field>
+      </form>
+      <label [className]="multiplo3 ? 'verde' : '' 
+              || multiplo5 ? 'rojo' : '' 
+              || multiplo7 ? 'azul' : '' " > 
+             {{valorUsuario}}  
+             <span style=" font-weight: bold;"> 
+              {{resultado}} 
+            </span>
+      </label>
+  </mat-card-content>
+  <mat-card-actions>
+    <button  mat-raised-button color="warn" 
+              (click)="multiplos()">
+               Buscar</button>
+  </mat-card-actions>
+</mat-card>

@@ -1,0 +1,19 @@
+.contenido{
+    margin: 4%;
+    background-color: rgb(219, 219, 219);
+}
+.verde{
+    color: green;
+}
+.rojo{
+    color: red;
+}
+.azul{
+    color: rgb(82, 82, 247);
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
